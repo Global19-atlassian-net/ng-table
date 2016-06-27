@@ -7,6 +7,7 @@ Code licensed under New BSD License.
 This directive allow to liven your tables. It support sorting, filtering and pagination.
 Header row with titles and filters automatic generated on compilation step.
 
+This folk has a few changes that allows the use of ng-tables with Jekyll. Jekyll uses liquid in teh background. This causes problems with Angularjs as the {{ var }} within a http file wil be removed by jekyll. To work round this we can change the AngularJS interpolation syntax which within this project changed from {{ var }} to {[{ var }]} which protects the angularjs variables from jekyll.
 
 ## Upgrading from an earlier version?
 

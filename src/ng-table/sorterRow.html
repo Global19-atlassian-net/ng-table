@@ -1,5 +1,5 @@
 <tr class="ng-table-sort-header">
-    <th title="{{$column.headerTitle(this)}}"
+    <th title="{[{$column.headerTitle(this)}]}"
         ng-repeat="$column in $columns"
         ng-class="{
                     'sortable': $column.sortable(this),
@@ -9,7 +9,7 @@
         ng-click="sortBy($column, $event)"
         ng-if="$column.show(this)"
         ng-init="template = $column.headerTemplateURL(this)"
-        class="header {{$column.class(this)}}">
+        class="header {[{$column.class(this)}]}">
         <div ng-if="!template" class="ng-table-header" ng-class="{'sort-indicator': params.settings().sortingIndicator == 'div'}">
             <span ng-bind="$column.title(this)" ng-class="{'sort-indicator': params.settings().sortingIndicator == 'span'}"></span>
         </div>

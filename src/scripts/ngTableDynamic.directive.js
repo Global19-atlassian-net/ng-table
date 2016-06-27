@@ -48,7 +48,7 @@
                     // this used in responsive table
                     var titleExpr = getAttrValue('title');
                     if (!titleExpr){
-                        el.attr('data-title-text', '{{$columns[$index].titleAlt(this) || $columns[$index].title(this)}}');
+                        el.attr('data-title-text', '{[{$columns[$index].titleAlt(this) || $columns[$index].title(this)}]}');
                     }
                     var showExpr = el.attr('ng-if');
                     if (!showExpr){

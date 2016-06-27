@@ -54,6 +54,7 @@ module.exports = function(grunt) {
                 src: [
                     'src/scripts/intro.js',
                     'src/scripts/ngTable.module.js',
+                    'src/scripts/ngTable.config.js',
                     'src/scripts/ngTableDefaults.js',
                     'src/scripts/ngTableEventsChannel.js',
                     'src/scripts/ngTableFilterConfig.js',
